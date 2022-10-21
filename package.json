@@ -1,5 +1,5 @@
 {
-  "name": "bases-node",
+  "name": "multiply-program-nodejs",
   "version": "0.0.1",
   "description": "Simple tabla de multiplicar con archivos .txt",
   "main": "index.js",

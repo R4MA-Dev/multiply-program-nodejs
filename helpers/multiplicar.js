@@ -21,7 +21,8 @@ const crearArchivo = async(base, listar, hasta) => {
             console.log(colors.yellow(consola))
         }
 
-        fs.mkdirSync("./salida")
+        fs.mkdirSync("./salida",{recursive: true})
+
         const nombreArchivo = `tabla-${base}.txt`
         fs.writeFileSync(`./salida/${nombreArchivo}`, salida)
 
