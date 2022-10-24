@@ -11,6 +11,9 @@ const argv = require('yargs')
         if(isNaN(argv.b)){
             throw colors.red("La base tiene que ser un numero")
         }
+        else if(argv.b <= 0){
+            throw colors.red("La base debe ser mayor a 0")
+        }
         return true
     })
     .option('h',{
@@ -22,6 +25,9 @@ const argv = require('yargs')
     .check((argv, options)=>{
         if(isNaN(argv.h)){
             throw colors.red("El hasta tiene que ser un numero")
+        }
+        else if(argv.h <= 0){
+            throw colors.red("El hasta debe ser mayor a 0")
         }
         return true
     })
