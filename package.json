@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Simple tabla de multiplicar con archivos .txt",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "base3": "node index.js --base=3"

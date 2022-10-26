@@ -1,5 +1,5 @@
-const fs = require('node:fs')
-const colors = require("colors")
+import fs from "node:fs"
+import colors from "colors"
 
 const crearArchivo = async(base, listar, hasta) => {
     try {
@@ -33,6 +33,4 @@ const crearArchivo = async(base, listar, hasta) => {
     }
 }
 
-module.exports = {
-    crearArchivo : crearArchivo
-}
+export {crearArchivo}

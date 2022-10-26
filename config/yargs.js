@@ -1,6 +1,8 @@
-const colors = require("colors")
+import colors from "colors"
+import yargs from "yargs"
+import { hideBin } from "yargs/helpers"
 
-const argv = require('yargs')
+export const argv = yargs(hideBin(process.argv))
     .option('b',{
         alias : "base",
         type : "number",
@@ -38,5 +40,3 @@ const argv = require('yargs')
         describe : "Mostrar la tabla en consola"
     })
     .argv
-
-module.exports = argv;
